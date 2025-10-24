@@ -1,0 +1,124 @@
+<robot name="Yaskawa_GP7">
+    <!-- Welt -->
+    <link name="world"/>
+    <joint name="world_to_base" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <!-- Baselink -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/Yaskawa/GP7/base_link.step"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="joint1" type="revolute">
+        <parent link="base_link"/>
+        <child link="link1"/>
+        <origin xyz="0.0 0 0.22" rpy="0.0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-2.9671" upper="2.9671" effort="87.0" velocity="6.545"/>
+    </joint>
+    <!-- Link 1 -->
+    <link name="link1">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/Yaskawa/GP7/link1.step"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="joint2" type="revolute">
+        <parent link="link1"/>
+        <child link="link2"/>
+        <origin xyz="0.04 0 0.11" rpy="-1.5708 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.1345" upper="2.5307" effort="51.0" velocity="5.4978"/>
+    </joint>
+    <!-- Link 2 -->
+    <link name="link2">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/Yaskawa/GP7/link2.step"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="joint3" type="revolute">
+        <parent link="link2"/>
+        <child link="link3"/>
+        <origin xyz="0.0 0 0.445" rpy="0.0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-1.2217" upper="3.3161" effort="51.0" velocity="7.1558"/>
+    </joint>
+    <!-- Link 3 -->
+    <link name="link3">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/Yaskawa/GP7/link3.step"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="joint4" type="revolute">
+        <parent link="link3"/>
+        <child link="link4"/>
+        <origin xyz="0.04 0 0.105" rpy="-1.5708 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.3161" upper="3.3161" effort="17.0" velocity="9.5993"/>
+    </joint>
+    <!-- Link 4 -->
+    <link name="link4">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/Yaskawa/GP7/link4.step"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="joint5" type="revolute">
+        <parent link="link4"/>
+        <child link="link5"/>
+        <origin xyz="0.0 0 0.335" rpy="1.5708 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-2.3562" upper="2.3562" effort="17.0" velocity="9.5993"/>
+    </joint>
+    <!-- Link 5 -->
+    <link name="link5">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/Yaskawa/GP7/link5.step"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="joint6" type="revolute">
+        <parent link="link5"/>
+        <child link="link6"/>
+        <origin xyz="0.0 0 0.08" rpy="1.5708 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-6.2832" upper="6.2832" effort="10.0" velocity="17.4533"/>
+    </joint>
+    <!-- Link 6 -->
+    <link name="link6">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/Yaskawa/GP7/link6.step"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="flansch_to_handling" type="fixed">
+        <parent link="link6"/>
+        <child link="Handling"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    <!-- Handling -->
+    <link name="Handling">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/Yaskawa/GP7/Handling.step"/>
+            </geometry>
+        </visual>
+    </link>
+    <joint name="TCP" type="fixed">
+        <parent link="Handling"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+</robot>

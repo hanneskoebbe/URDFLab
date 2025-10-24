@@ -1,0 +1,143 @@
+<!-- dh-parameter: a [m], alpha [°], d [m], theta [°] -->
+<!-- limits: lower/upper: [rad], effort: [Nm], velocity: [rad/s] -->
+<robots>
+    <robot brand="KUKA" name="KR6">
+        <joints>
+            <joint>
+                <dh a="0.0" alpha="0.0" d="0.22" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-2.9671" upper="2.9671" effort="87" velocity="6.5450"/>
+            </joint>
+            <joint>
+                <dh a="0.04" alpha="-1.5708" d="0.11" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-1.1345" upper="2.5307" effort="51" velocity="5.4978"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="0.0" d="0.445" theta="1.5708"/>
+                <type>revolute</type>
+                <limits lower="-1.2217" upper="3.3161" effort="51" velocity="7.1558"/>
+            </joint>
+            <joint>
+                <dh a="0.04" alpha="-1.5708" d="0.105" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-3.3161" upper="3.3161" effort="17" velocity="9.5993"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="1.5708" d="0.335" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-2.3562" upper="2.3562" effort="17" velocity="9.5993"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="1.5708" d="0.08" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-6.2832" upper="6.2832" effort="10" velocity="17.4533"/>
+            </joint>
+        </joints>
+    </robot>
+
+    <robot brand="Yaskawa" name="GP7">
+        <joints>
+            <joint>
+                <dh a="0.00" alpha="0.00" d="0.22" theta="0.00"/>
+                <type>revolute</type>
+                <limits lower="-2.9671" upper="2.9671" effort="87" velocity="6.5450"/>
+            </joint>
+            <joint>
+                <dh a="0.04" alpha="-1.5708" d="0.11" theta="0.00"/>
+                <type>revolute</type>
+                <limits lower="-1.1345" upper="2.5307" effort="51" velocity="5.4978"/>
+            </joint>
+            <joint>
+                <dh a="0.00" alpha="0.00" d="0.445" theta="90.00"/>
+                <type>revolute</type>
+                <limits lower="-1.2217" upper="3.3161" effort="51" velocity="7.1558"/>
+            </joint>
+            <joint>
+                <dh a="0.04" alpha="-1.5708" d="0.105" theta="0.00"/>
+                <type>revolute</type>
+                <limits lower="-3.3161" upper="3.3161" effort="17" velocity="9.5993"/>
+            </joint>
+            <joint>
+                <dh a="0.00" alpha="1.5708" d="0.335" theta="0.00"/>
+                <type>revolute</type>
+                <limits lower="-2.3562" upper="2.3562" effort="17" velocity="9.5993"/>
+            </joint>
+            <joint>
+                <dh a="0.00" alpha="1.5708" d="0.08" theta="0.00"/>
+                <type>revolute</type>
+                <limits lower="-6.2832" upper="6.2832" effort="10" velocity="17.4533"/>
+            </joint>
+        </joints>
+    </robot>
+
+    <robot brand="Yaskawa" name="GP12">
+        <joints>
+            <joint>
+                <dh a="0.0" alpha="0.0" d="0.30" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-2.9671" upper="2.9671" effort="87" velocity="6.5450"/>
+            </joint>
+            <joint>
+                <dh a="0.05" alpha="-1.5708" d="0.15" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-1.1345" upper="2.5307" effort="51" velocity="5.4978"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="0.0" d="0.50" theta="1.5708"/>
+                <type>revolute</type>
+                <limits lower="-1.2217" upper="3.3161" effort="51" velocity="7.1558"/>
+            </joint>
+            <joint>
+                <dh a="0.05" alpha="-1.5708" d="0.12" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-3.3161" upper="3.3161" effort="17" velocity="9.5993"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="1.5708" d="0.36" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-2.3562" upper="2.3562" effort="17" velocity="9.5993"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="1.5708" d="0.09" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-6.2832" upper="6.2832" effort="10" velocity="17.4533"/>
+            </joint>
+        </joints>
+    </robot>
+
+    <robot brand="Mitsubishi" name="RV7">
+        <joints>
+            <joint>
+                <dh a="0.0" alpha="0.0" d="0.22" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-2.9671" upper="2.9671" effort="87" velocity="6.5450"/>
+            </joint>
+            <joint>
+                <dh a="0.04" alpha="-1.5708" d="0.11" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-1.1345" upper="2.5307" effort="51" velocity="5.4978"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="0.0" d="0.445" theta="1.5708"/>
+                <type>revolute</type>
+                <limits lower="-1.2217" upper="3.3161" effort="51" velocity="7.1558"/>
+            </joint>
+            <joint>
+                <dh a="0.04" alpha="-1.5708" d="0.105" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-3.3161" upper="3.3161" effort="17" velocity="9.5993"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="1.5708" d="0.335" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-2.3562" upper="2.3562" effort="17" velocity="9.5993"/>
+            </joint>
+            <joint>
+                <dh a="0.0" alpha="1.5708" d="0.08" theta="0.0"/>
+                <type>revolute</type>
+                <limits lower="-6.2832" upper="6.2832" effort="10" velocity="17.4533"/>
+            </joint>
+        </joints>
+    </robot>
+</robots>

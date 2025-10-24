@@ -1,0 +1,15 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/RobotModel
+      Name: Robot Model
+      Robot Description: robot_description
+  Fixed Frame: base_link
+Views:
+  Current:
+    Class: rviz/TopDownOrtho

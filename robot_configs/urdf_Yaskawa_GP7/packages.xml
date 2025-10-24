@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>urdf_Yaskawa_GP7</name>
+    <version>0.1.0</version>
+    <description>URDF description for Yaskawa GP7 robot</description>
+
+
+    <maintainer email="you@example.com">Max Mustermann</maintainer>
+    <license>MIT</license>
+
+
+    <buildtool_depend>ament_cmake</buildtool_depend>
+
+
+    <export>
+    </export>
+</package>
